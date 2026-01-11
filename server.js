@@ -91,7 +91,7 @@ async function start() {
       console.log(`Server running on http://localhost:${PORT}`);
     });
   } catch (err) {
-    throw ("Failed to start:", err.message);
+    throw new Error ("Failed to start:", err.message);
   }
 }
 
